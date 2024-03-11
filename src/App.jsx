@@ -103,13 +103,14 @@ function App() {
 
   return (
     <>
-      <div className="h-full flex flex-col justify-center">
+      <div className="h-full flex flex-col justify-center gap-4 text-center">
+        <h3 className="text-3xl text-white">Howard's Metronome App</h3>
         <div className="flex flex-col gap-6 w-[90vw] md:w-2/3 mx-auto border border-gray-400 rounded-lg shadow-md p-4 bg-[#242a31]">
           {/* bpm slider */}
           <div className="text-center">
             <label
               htmlFor="medium-range"
-              className="block mb-2 text-4xl font-medium text-white"
+              className="block mb-2 text-3xl font-medium text-white"
             >
               {bpm} BPM
             </label>
@@ -146,7 +147,7 @@ function App() {
           <div className="text-center">
             <label
               htmlFor="medium-range"
-              className="block mb-2 text-4xl font-medium text-white"
+              className="block mb-2 text-3xl font-medium text-white"
             >
               {swingPercentage}% Swing
             </label>

@@ -28,6 +28,7 @@ function Timer(callback, timeInterval, swingPercentage, options) {
     this.callback();
 
     this.expected += this.timeInterval;
+    //formula for swing percentage = (Swing Delay / Time Interval) * 100
     const nextTimeout = this.timeInterval - drift;
     console.log('next timeout::', nextTimeout)
     this.timeout = setTimeout(this.round.bind(this), nextTimeout);
